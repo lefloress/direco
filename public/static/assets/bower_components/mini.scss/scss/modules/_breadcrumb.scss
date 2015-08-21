@@ -1,0 +1,66 @@
+.breadcrumb {
+	background-color: map-fetch($colors, brand-white);
+	padding: 10px;
+	@include box-sizing();
+
+	@include breakpoint(desktop) {
+		font-size: 16px;
+	}
+
+	@include breakpoint(responsive) {
+		font-size: 14px;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+
+		@include breakpoint(desktop) {
+			display: inline-block;
+
+			&:after {
+				content: ' /';
+				position: relative;
+			}
+
+			&:last-of-type:after {
+				content: '';
+			}			
+		}
+
+		@include breakpoint(tablet) {
+			display: inline-block;
+
+			&:after {
+				content: ' /';
+				position: relative;
+			}
+
+			&:last-of-type:after {
+				content: '';
+			}			
+		}		
+
+		@include breakpoint(mobile) {
+			display: block;
+		}
+
+	}
+
+	a {
+		color: #999;
+
+		&:hover {
+			color: map-fetch($colors, brand-red);
+		}
+	}
+
+	span {
+		color: map-fetch($colors, brand-red);
+	}
+
+}

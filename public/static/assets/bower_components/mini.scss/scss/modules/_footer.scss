@@ -1,0 +1,166 @@
+.foot-contacts {
+	text-align: center;
+
+	a {
+		background-color: map-fetch($colors, brand-blue);
+		border-right: 1px solid darken(map-fetch($colors, brand-blue), 8%);
+		color: white;
+		display: block;
+		height: 60px;
+		line-height: 60px;
+		float: left;
+		@include box-sizing();
+
+		&:last-of-type {
+			border-right: 0;
+		}
+
+		span {
+			top: 5px;
+		}
+
+	}
+
+	@include breakpoint(desktop) {
+
+		a {
+			width: 33.33%;
+		}
+
+	}
+
+	@include breakpoint(responsive) {
+
+		a {
+			width: 50%;
+		}
+
+		.link-contact {
+			border-bottom: 1px solid darken(map-fetch($colors, brand-blue), 8%);
+			width: 100%;
+		}
+
+	}
+
+	span {
+
+		@include breakpoint(desktop) {
+			margin-right: 10px;
+		}
+
+		@include breakpoint(tablet) {
+			margin-right: 10px;
+		}	
+
+	}
+
+	@include breakpoint(mobile) {
+
+		.link-email,
+		.link-tel {
+			text-indent: -640px;
+			overflow: hidden;
+			position: relative;
+
+			span {
+				left: -500px;
+				right: -500px;
+				margin: 0 auto;
+				top: 30%;
+				position: absolute;
+			}
+
+		}
+
+	}
+
+}
+
+.foot-end {
+	clear: both;
+	
+	ul,
+	.guarantee {
+
+		@include breakpoint(responsive) {
+			border-bottom: 1px solid map-fetch($colors, gray);
+			text-align: center;
+		}
+
+	}
+
+
+	figure {
+		
+		@include breakpoint(desktop) {		
+			float: left;
+			margin-right: 20px;
+		}
+
+	}
+
+	h4 {
+
+		@include breakpoint(desktop) {
+			font-size: 18px;
+		}
+
+		@include breakpoint(responsive) {
+			font-size: 16px;
+		}
+
+	}
+
+	ul {
+		list-style: none;
+		margin: 0 0 20px;
+		padding: 0;
+		
+		@include breakpoint(desktop) {
+			text-align: right;
+		}
+
+		li {
+
+			@include breakpoint(desktop) {
+				display: inline-block;
+				margin-right: 10px;
+			}
+
+			@include breakpoint(responsive) {
+				border-bottom: 1px solid map-fetch($colors, gray);
+				display: block;
+				padding: 20px 0;
+
+				a {
+					display: block;
+				}
+
+			}			
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+		}
+
+	}
+
+	.copyright {
+
+		@include breakpoint(desktop) {
+			text-align: right;
+		}
+
+		@include breakpoint(responsive) {
+			text-align: center;
+		}
+
+		p {
+			font-size: 14px;
+			margin-bottom: 0;
+		}
+
+	}
+
+}

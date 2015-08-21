@@ -1,0 +1,27 @@
+// import all helpers
+//
+@import 'base';
+
+.note {
+
+	h2 {
+		margin-bottom: 10px;
+	}
+
+	h4 {
+		color: map-fetch($colors, brand-gray);
+		font-size: 14px;
+	}
+
+	header {
+		border-bottom: 1px solid map-fetch($colors, gray);
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+
+	.share-buttons {
+		margin-bottom: 0;
+	}
+
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAMC,QAAG;EACF,aAAa,EAAE,IAAI;;AAGpB,QAAG;EACF,KAAK,ECHI,OAAmB;EDI5B,SAAS,EAAE,IAAI;;AAGhB,YAAO;EACN,aAAa,EAAE,cAAkC;EACjD,aAAa,EAAE,IAAI;EACnB,cAAc,EAAE,IAAI;EACpB,UAAU,EAAE,MAAM;;AAGnB,oBAAe;EACd,aAAa,EAAE,CAAC",
+"sources": ["../scss/pages/news.scss","../scss/helpers/_functions.scss"],
+"names": [],
+"file": "news.css"
+}

@@ -1,0 +1,40 @@
+.banner {
+	background-color: map-fetch($colors, blue-dk);
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	height: 140px;
+	text-align: center;
+
+	@include pixel-ratio(low) {
+		background-image: url('#{map-fetch($paths, img)}pattern.png');		
+	}
+
+	@include pixel-ratio(retina-2k) {
+		background-image: url('#{map-fetch($paths, img)}2x-pattern.png');	
+		background-size: 600px;
+	}
+
+	h2 {
+		color: white;	
+		margin: 30px 0 0px;
+		text-transform: uppercase;
+
+		@include breakpoint(desktop) {
+			font-size: 40px;
+			line-height: 48px;
+		}
+
+		@include breakpoint(tablet) {
+			font-size: 32px;
+			line-height: 38px;
+		}
+
+		@include breakpoint(mobile) {
+			font-size: 22px;
+			line-height: 30px;
+		}
+
+	}
+
+}

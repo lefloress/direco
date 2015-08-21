@@ -1,0 +1,172 @@
+//
+// Grid
+// use @function map-fetch($map, $keys)
+// use @media queries
+// grid's generator
+// 
+
+@include breakpoint(desktop) {
+
+    @include generate-col(map-fetch($grid, col-qty), map-fetch($grid, gutter), map-fetch($grid, col-width));
+
+    @include generate-pre-col(map-fetch($grid, col-qty), map-fetch($grid, gutter), map-fetch($grid, col-width));
+
+    @include generate-suf-col(map-fetch($grid, col-qty), map-fetch($grid, gutter), map-fetch($grid, col-width));
+
+    @include generate-container(map-fetch($grid, col-qty), map-fetch($grid, gutter), map-fetch($grid, col-width));
+
+    // grid's utilities
+    .row {
+        padding: 40px 0;
+    }
+
+    .row-top {
+        padding-top: 40px;
+    }
+
+    .colr {
+        float: right;
+        margin: 0 map-fetch($grid, gutter) / 2;
+    }
+
+
+}
+
+@include breakpoint(big-desktop) {
+
+    @include generate-col(map-fetch($grid, col-qty), map-fetch($grid, big-gutter), map-fetch($grid, big-col-width));
+
+    @include generate-pre-col(map-fetch($grid, col-qty), map-fetch($grid, big-gutter), map-fetch($grid, big-col-width));
+
+    @include generate-suf-col(map-fetch($grid, col-qty), map-fetch($grid, big-gutter), map-fetch($grid, big-col-width));
+
+    @include generate-container(map-fetch($grid, col-qty), map-fetch($grid, big-gutter), map-fetch($grid, big-col-width));
+
+    // grid's utilities
+    .colr {
+        float: right;
+        margin: 0 map-fetch($grid, gutter) / 2;
+    }
+
+}
+
+@include breakpoint(responsive) {
+
+    .wrap {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+
+        &:after {
+            content: " ";
+            clear: both;
+            display: block;
+        }
+    } 
+
+    // grid's utilities
+    .row {
+        padding: 20px 0;
+    }    
+
+    .row-top {
+        padding-top: 20px;
+    }    
+
+    @for $i from 2 through (map-fetch($grid, col-qty)) {
+        .col#{$i} { 
+            float: left;
+            margin: 0;
+            padding: 0 10px;
+            @include box-sizing(border-box);
+        }
+    }    
+
+}
+
+@include breakpoint(tablet) {
+
+    .col12, .col11, .col10, .col9, .col8, .col7 {
+        width: 100%;
+    }
+
+    .col6, .col5, .col4, .col3 {
+        width: 50%;
+    }
+
+    .col2 {
+        width: 33.33%;
+    }
+
+    .half-tablet {
+        float: left;
+        width: 50%;
+    }
+
+    .one-third-tablet {
+        float: left;
+        width: 33.33%;
+    }
+
+    .two-thirds-tablet {
+        float: left;
+        width: 66.66%;
+    }    
+    
+}
+
+@include breakpoint(mobile) {
+    
+    .col12, .col11, .col10, .col9, .col8, .col7, .col6, .col5, .col4, .col3 {
+        width: 100%;
+    }
+    
+    .col2 {
+        width: 50%;
+    }
+
+    .half-mobile {
+        width: 50%;
+    }
+
+}
+
+// grid's utilities to responsive (tablet | mobile)
+@include breakpoint(responsive) {
+    .full {
+        width: 100%;
+    }
+}
+
+// grid's utilities
+.alpha {
+  	margin-left: 0;
+}
+
+.omega {
+  	margin-right: 0;
+}
+
+.clear {
+  	clear: both;
+}
+
+.center {
+  	float: none;
+  	margin: 0 auto;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.invert-colors {
+    background-color: map-fetch($colors, brand-white);
+}

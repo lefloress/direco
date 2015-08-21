@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="application-name" content="direco.com.ve">
+	<meta name="author" content="Dessigual">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">	
+	<meta name="robots" content="all">
+	<meta name="description" content="Description Direco">
+	<meta name="keywords" content="content keywords"> 
+	
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="assets/favicons/favicon-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="assets/favicons/favicon-160x160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="assets/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="assets/favicons/favicon-32x32.png" sizes="32x32">
+	<meta name="msapplication-TileColor" content="#b91d47">
+	<meta name="msapplication-TileImage" content="assets/favicons/mstile-144x144.png">
+	
+	<title>Carrito de Compra | Direco</title>  	
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/bower_components/mini.scss/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/bower_components/mini.scss/css/purchase.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="col12">
+				<button class="open-nav">
+					<span class="navicon"></span>
+				</button>		
+				<h1 class="site-brand">	
+					<a href="/"></a>
+				</h1>
+				<div class="user-tab">
+					<!--
+					<button class="open-form">
+						<span class="copy-text">Entrar</span>
+						<span class="icon-user"></span>
+					</button>
+					<a href="registro.html" class="btn">Regístrate</a>
+					<form action="#" class="form form-login">
+						<fieldset>
+							<div class="field">
+								<input type="text" placeholder="Username">
+							</div>
+							<div class="field">
+								<input type="password" placeholder="Contraseña">
+							</div>
+							<div class="field-submit">
+								<button type="submit" class="btn">Iniciar Sesión</button>
+								<p><a href="recuperar-contrasena.html">Olvidé mi Contraseña</a></p>
+							</div>
+						</fieldset>
+					</form>
+					-->
+					<p class="username">
+						<a href="#editar-perfil">Username</a>
+						<a href="carrito.html"><span class="icon-cart"></span></a>
+						<a href="#logout"><span class="icon-logout"></span></a>
+					</p>
+				</div>					
+			</div>
+		</div>	
+		<nav class="main-nav">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li><a href="noticias.html">Noticias</a></li>
+				<li><a href="servicios.html">Servicios</a></li>
+				<li><a href="#">Información</a></li>
+				<li><a href="catalogo.html">Catálogo</a></li>
+				<li><a href="contacto.html">Contáctanos</a></li>
+			</ul>
+		</nav>	
+	</header>	
+	<section class="banner">
+		<div class="container">
+			<div class="col12">
+				<h2>Carrito de Compra</h2>
+			</div>
+		</div>
+	</section>	
+	<section class="cart">
+		<div class="container row-top">
+			<div class="col12">
+				<h3>Carrito de Compra</h3>
+				<table class="table table-order">
+					<thead>
+						<tr>
+							<th>Código</th>
+							<th>Producto</th>
+							<th>Cantidad</th>
+							<th>Acciones</th>
+							<th>Precio</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>109717</td>
+							<td>Estop Eje Mando CH Corsa 1300/1400/160090465688</td>
+							<td>1</td>
+							<td>
+								<a href="#edit" class="lnk-act"><span class="icon-edit"></span></a>
+								<a href="#delete" class="lnk-act"><span class="icon-delete"></span></a>
+							</td>
+							<td>BsF. 1800,00</td>
+						</tr>
+						<tr>
+							<td>109717</td>
+							<td>Estop Eje Mando CH Corsa 1300/1400/160090465688</td>
+							<td>1</td>
+							<td>
+								<a href="#edit" class="lnk-act"><span class="icon-edit"></span></a>
+								<a href="#delete" class="lnk-act"><span class="icon-delete"></span></a>
+							</td>
+							<td>BsF. 1800,00</td>
+						</tr>
+						<tr>
+							<td>109717</td>
+							<td>Estop Eje Mando CH Corsa 1300/1400/160090465688</td>
+							<td>1</td>
+							<td>
+								<a href="#edit" class="lnk-act"><span class="icon-edit"></span></a>
+								<a href="#delete" class="lnk-act"><span class="icon-delete"></span></a>
+							</td>
+							<td>BsF. 1800,00</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="total-price">
+					<p><span class="namespace">Precio total </span><span class="amount">BsF. 5400,00</span></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="client">
+		<div class="container row-top">
+			<div class="col12">
+				<h3>Datos del Cliente</h3>
+				<ul>
+					<li><strong>Nombre: </strong>Nombre del cliente</li>
+					<li><strong>Email: </strong>hola@correo.com</li>
+					<li><strong>Rif: </strong>V-12232432-9</li>
+					<li><strong>Teléfono Local: </strong>0212-255-55-55</li>
+					<li><strong>Celular: </strong>0414-288-88-88</li>
+				</ul>
+			</div>
+			<div class="col12">
+				<h3>Datos Fiscales</h3>
+				<ul>
+					<li><strong>Dirección: </strong>Avenida / Calle / Esquina / Carrera / Edificio / Residencia / Quinta / Local / Piso / Nivel / Apartamento / Oficina / Urbanización / Zona / Sector / Puntos de referencia</li>
+					<li><strong>Municipio: </strong>Sucre</li>
+					<li><strong>Estado: </strong>Miranda</li>
+					<li><strong>Zona Postal: </strong>1090</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="delivery">
+		<div class="container row-top">
+			<div class="col12">
+				<h3>Instrucciones de despacho en caso de compra:</h3>
+				<form action="#" class="form form-address">
+					<fieldset>
+						<div class="field field-required">
+							<label for="deliver">Entregar a</label>
+							<select name="deliver" id="deliver" class="select2">
+								<option>Selecciona una Dirección</option>
+								<option value="1">Dirección fiscal</option>
+								<option value="1">Cliente retira</option>
+								<option value="1">Agregar otra dirección</option>
+							</select>							
+						</div>
+						<div class="field-submit">
+							<a href="catalogo.html" class="btn">Volver al Catálogo</a>
+							<a href="#historial-compras" class="btn">Historial de Compras</a>						
+							<button type="submit" class="btn-red omega colr">Confirmar Compra</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</section>
+	<footer class="footer row-top">
+		<div class="foot-contacts">		
+			<a href="#contact" class="link-contact">No lo encuentras? solicítalo aquí</a>
+			<a href="tel:15551234567" class="link-tel">
+				<span class="icon-tel"></span>(0241) 8534334
+			</a>
+			<a href="mailto:info@direco.com.ve?subject=Mail desde nuestro sitio web" class="link-email">
+				<span class="icon-mail"></span>
+				info@direco.com.ve
+			</a>
+		</div>	
+		<div class="foot-end">
+			<div class="container row">
+				<div class="col5 full">
+					<div class="guarantee">
+						<figure><img src="assets/images/sticker.png" alt="100% garantizados" width="100"></figure>
+						<h4>Productos 100% garantizados</h4>
+						<p>Distribuimos repuestos automotrices de la mejor calidad y 100% nuevos para vehículos europeos, americanos y asiáticos.</p>						
+					</div>
+				</div>
+				<div class="col7 full">
+					<ul>
+						<li><a href="servicios.html">Servicios</a></li>
+						<li><a href="#Informacion">Información</a></li>
+						<li><a href="#Catalogo">Catálogo</a></li>
+						<li><a href="#Promociones">Promociones</a></li>
+						<li><a href="#contacto">Ventas al mayor</a></li>
+					</ul>
+					<div class="copyright">
+						<p>Direco, C.A. RIF: J-07536530-5 © 2014.</p>
+						<p>Derechos reservados. Desarrollado por <a href="http://www.dessigual.com" target="_blank">Dessigual.</a></p>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="assets/bower_components/select2/select2.min.js"></script>
+	<script src="assets/bower_components/select2/select2_locale_es.js"></script>
+	<script src="assets/js/scripts.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+// Buttons
+// Basic styles for buttons
+//
+
+// @extend %buttons;
+// 
+%buttons {
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	@include border-rounded(2px);
+
+	&:focus {
+		outline: none;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+
+}
+
+// @extend %btn;
+// 
+%btn {
+	@extend %buttons;
+	height: 40px;
+	font-size: 16px;
+	line-height: 40px;	
+	padding: 0 16px;
+}
+
+// @extend %btn-small;
+// 
+%btn-small {
+	@extend %buttons;
+	font-size: 14px;
+	padding: 0 10px;		
+}

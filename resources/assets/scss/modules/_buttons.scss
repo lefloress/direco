@@ -1,0 +1,76 @@
+.btn {
+	@extend %btn;
+	background-color: map-fetch($colors, brand-blue);
+
+	&:hover {
+		background-color: darken(map-fetch($colors, brand-blue), 8%); 
+		color: white;
+	}
+
+}
+
+.btn-red {
+	@extend %btn;
+	background-color: map-fetch($colors, brand-red);
+
+	&:hover {
+		background-color: darken(map-fetch($colors, brand-red), 8%);
+		color: white;
+	}
+
+}
+
+.btn-transparent {
+	@extend %btn;
+	border: 1px solid white;
+
+	&:hover {
+		background-color: white;
+		color: map-fetch($colors, brand-red);
+	} 
+}
+
+.btn-disabled {
+	@extend %btn;
+	background-color: map-fetch($colors, gray);
+	color: map-fetch($colors, text);
+	cursor: default;
+	pointer-events: none;
+}
+
+.share-buttons {
+	clear: both;
+	margin-bottom: 20px;
+
+	@include breakpoint(mobile) {
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.btn {
+		margin-left: 0;
+
+		@include breakpoint(desktop) {
+			margin-right: 10px;
+		}
+
+		@include breakpoint(responsive) {
+			margin-bottom: 10px;
+			margin-right: 6px;
+		}
+
+	}
+
+}
+
+.btn-twt {
+	background-color: #52a7e7;
+}
+
+.btn-fb {
+	background-color: #45619d;
+}
+
+.btn-gplus {
+	background-color: #d73d32;
+}

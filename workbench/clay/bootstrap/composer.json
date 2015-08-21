@@ -1,0 +1,21 @@
+{
+    "name": "clay/bootstrap",
+    "description": "Build form fields, menus, alert messages and other view components quickly",
+    "authors": [
+        {
+            "name": "Duilio Palacios",
+            "email": "silence@dessigual.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*",
+        "laravelcollective/html": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Clay\\Bootstrap\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

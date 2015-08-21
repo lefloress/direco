@@ -1,0 +1,157 @@
+// import all helpers
+//
+@import 'base';
+
+.footer.row-top {
+	padding-top: 0;
+}
+
+.home-banner {
+	background-image: url('#{map-fetch($paths, img)}home-banner.jpg');
+	background-repeat: no-repeat;
+	color: white;
+	position: relative;
+
+	@include breakpoint(desktop) {
+		background-attachment: fixed;
+		background-position: center -370px;
+		height: 300px;		
+	}
+
+	@include breakpoint(responsive) {
+		background-image: url('#{map-fetch($paths, img)}home-banner-mobile.jpg');
+		background-position: center;
+		background-size: cover;
+	}
+
+	@include breakpoint(tablet) {
+		height: 250px;		
+	}	
+	
+	@include breakpoint(mobile) {
+		height: 220px;
+	}	
+
+	h2 {
+		color: white;
+		
+		@include breakpoint(desktop) {
+			font-size: 40px;
+			line-height: 48px;			
+		}
+
+		@include breakpoint(tablet) {
+			font-size: 32px;
+			line-height: 38px;			
+		}		
+
+		@include breakpoint(mobile) {
+			font-size: 22px;
+			line-height: 30px;			
+		}		
+
+	}
+
+	ol {
+		background-color: map-fetch($colors, brand-blue);
+		color: white;
+		font-size: 14px;
+		margin-top: 0;
+		padding: 10px 0 10px 34px;
+		position: absolute;
+		width: 100%;
+		@include border-rounded(0 0 8px 8px);
+		@include box-sizing();
+	}
+	
+	.form {
+		padding: 0 10px;
+		@include box-sizing();
+
+		@include breakpoint(big-desktop) {
+			padding: 0 15px;
+		}
+
+	}
+
+	.form-search {
+		clear: both;
+		
+		@include breakpoint(desktop) {
+			width: 400px;
+		}
+
+		@include breakpoint(big-desktop) {
+			width: 500px;
+		}
+
+		@include breakpoint(tablet) {
+			width: 400px;
+		}
+
+	}
+
+	.open-advanced-search {
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;		
+		
+		@include breakpoint(big-desktop) {
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+
+		@include breakpoint(mobile) {
+			margin-top: 6px;
+		}
+
+		&.active {
+			background-color: white;
+			color: map-fetch($colors, brand-red);
+		}
+
+	}
+
+	.form-advanced-search {
+		background-color: map-fetch($colors, gray);
+		left: 0;
+		position: absolute;
+		top: 100%;
+		visibility: hidden;
+		z-index: 2;
+		width: 100%;
+		@include opacity(0);
+		@include transition(0.4s opacity);
+
+		&.active {
+			visibility: visible;
+			@include opacity(1);
+		}
+
+		fieldset {
+			margin: 0 auto;
+			
+			@include breakpoint(desktop) {
+				width: 960px;
+			}
+			
+			@include breakpoint(big-desktop) {
+				width: 1180px;
+			}
+
+		}
+
+		.field {
+
+			@include breakpoint(desktop) {
+				clear: none;
+				float: left;
+				margin: 0 1.665%;
+				width: 30%;
+			}
+
+		}
+
+	}
+
+}

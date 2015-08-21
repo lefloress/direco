@@ -1,0 +1,18 @@
+.note h2 {
+  margin-bottom: 10px;
+}
+.note h4 {
+  color: #A0ACBE;
+  font-size: 14px;
+}
+.note header {
+  border-bottom: 1px solid #EEE;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.note .share-buttons {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=news.css.map */

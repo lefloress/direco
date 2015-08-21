@@ -1,0 +1,115 @@
+.icon-user {
+	@extend %icon;
+	background-position: -25px 0;
+}
+
+.icon-cart {
+	@extend %icon;
+	background-position: 0 -26px;
+
+	&.white {
+		background-position: -25px -125px;
+	}
+}
+
+.icon-logout {
+	@extend %icon;
+	background-position: -25px -26px;
+}
+
+.icon-search {
+	@extend %icon;
+	background-position: 0 -50px;
+}
+
+.icon-more {
+	@extend %icon;
+	background-position: 0 -125px;
+}
+
+.icon-less {
+	@extend %icon;
+	background-position: 0 -150px;
+}
+
+.icon-mail {
+	@extend %icon;
+	background-position: 0 -175px;
+}
+
+.icon-tel {
+	@extend %icon;
+	background-position: -25px -150px;
+}
+
+.icon-close {
+	@extend %icon;
+	background-position: -25px -175px;
+}
+
+.icon-edit {
+	@extend %icon;
+	background-position: 0 -202px;
+
+	&:hover {
+		background-position: -25px -202px;
+	}
+
+} 
+
+.icon-delete {
+	@extend %icon;
+	background-position: 0 -227px;
+
+	&:hover {
+		background-position: -25px -227px;
+	}	
+}
+
+.icon-category {
+	@extend %icon;
+}
+
+.icon-motor {
+	background-position: 0 -250px;
+}
+
+.icon-embragues {
+	background-position: -25px -251px;
+}
+
+.icon-caja-de-velocidad {
+	background-position: 0 -276px;
+}
+
+.icon-tripoides {
+	background-position: -25px -276px;
+}
+
+.icon-frenos {
+	background-position: 0 -301px;
+}
+
+.icon-direccion {
+	background-position: -25px -301px;
+}
+
+.icon-suspension-y-ruedas {
+	background-position: 0 -326px;
+}
+
+.icon-sistema-aire-acondicionado {
+	background-position: -25px -326px;
+}
+
+.icon-sistema-electrico {
+	background-position: 0 -351px;
+}
+
+.icon-carrocerias {
+	background-position: -25px -351px;
+}
+
+.icon-herramientas-aditivos-grasas-y-acceso {
+	background-position: 0 -376px;
+}

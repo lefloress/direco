@@ -1,0 +1,12 @@
+/.idea
+/vendor
+/node_modules
+.env
+.DS_Store
+Thumbs.db
+composer.lock
+composer.phar
+storage
+/public/static/assets/.sass-cache/*
+/public/assets/.sass-cache/*
+/resources/assets/.sass-cache/*

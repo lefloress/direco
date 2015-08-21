@@ -1,0 +1,297 @@
+.header {
+	background-color: white;
+	position: relative;
+	z-index: 3;
+
+	@include breakpoint(mobile) {
+		height: 60px;
+	}	
+
+	.site-brand {
+		height: 60px;
+		float: left;
+		margin: 10px;
+
+		@include breakpoint(mobile) {
+			margin: 10px 0;			
+		}
+
+		a {
+			background-repeat: no-repeat;
+			display: block;
+
+			@include breakpoint(desktop) {
+				height: 43px;
+				margin: 10px 0;
+				width: 200px;
+
+				@include pixel-ratio(low) {
+					background-image: url('#{map-fetch($paths, img)}logo.png');
+				}
+
+				@include pixel-ratio(retina-2k) {
+					background-image: url('#{map-fetch($paths, img)}2x-logo.png');
+					background-size: 200px;
+				}				
+
+			}
+
+			@include breakpoint(tablet) {
+				height: 43px;
+				margin: 10px 0;
+				width: 200px;
+
+				@include pixel-ratio(low) {
+					background-image: url('#{map-fetch($paths, img)}logo.png');
+				}
+
+				@include pixel-ratio(retina-2k) {
+					background-image: url('#{map-fetch($paths, img)}2x-logo.png');
+					background-size: 200px;
+				}					
+			}			
+
+			@include breakpoint(mobile) {
+				height: 40px;
+				width: 81px;
+
+				@include pixel-ratio(low) {
+					background-image: url('#{map-fetch($paths, img)}isotipo.png');
+				}
+
+				@include pixel-ratio(retina-2k) {
+					background-image: url('#{map-fetch($paths, img)}2x-isotipo.png');
+					background-size: 81px;
+				}				
+
+			}			
+
+		}
+
+	}
+
+	.user-tab {
+		float: right;
+		text-align: right;
+		margin: 20px 0;
+
+		@include breakpoint(desktop) {
+			position: relative;
+		}
+
+		@include breakpoint(tablet) {
+			position: relative;
+		}		
+
+		@include breakpoint(mobile) {
+			margin: 10px 0;
+
+			.btn {
+				font-size: 14px;
+				margin-right: 0;			
+				padding: 0 10px;	
+			}
+		}
+
+	}
+
+	.username {
+		display: inline-block;
+		margin: 5px 10px;
+
+		a {
+			display: inline-block;
+			height: 30px;
+			line-height: 30px;
+			margin-left: 10px;
+			vertical-align: middle;
+		}
+	
+	}
+
+}
+
+.open-form {
+	height: 40px;
+	float: left;
+	margin: 0 10px;
+
+	@include breakpoint(desktop) {
+		
+		.icon-user {
+			display: none;
+		}
+
+		&.active {
+			color: map-fetch($colors, brand-red);
+		}
+
+	}
+
+	@include breakpoint(tablet) {
+		
+		.icon-user {
+			display: none;
+		}
+
+		&.active {
+			color: map-fetch($colors, brand-red);
+		}
+
+	}	
+
+	@include breakpoint(mobile) {
+
+		.icon-user {
+			top: 2px;
+		}
+
+		.copy-text {	
+			display: none;
+		}
+
+		&.active .icon-user {
+			background-position: 0 0;
+		}
+
+	}
+
+
+}
+
+.open-nav {
+	display: none;
+
+	@include breakpoint(mobile) {
+		border: none;
+		display: block;
+		float: left;
+		margin: 10px 0;
+		padding: 0;
+		vertical-align: top;
+		@include sizes(30px, 40px);		
+
+		&.active {
+
+			.navicon {
+
+				&:after {
+					top: 1px;
+				}
+
+				&:before {
+					bottom: 1px;
+				}
+
+			}
+		}	
+
+		.navicon {
+			background-color: map-fetch($colors, brand-blue);
+			display: block;
+			height: 2px;
+			margin: 0;
+			position: relative;
+			width: 20px;
+			@include border-rounded(2px);
+
+			&:after,
+			&:before {
+				background-color: map-fetch($colors, brand-blue);
+				content: '';
+				height: 2px;
+				left: 0;
+				display: block;
+				position: absolute;
+				width: 100%;
+				@include border-rounded(2px);	
+				@include transition(0.4s);			
+			}
+
+			&:after {
+				top: 5px;	
+			}
+
+			&:before {
+				bottom: 5px;
+			}
+
+		}
+
+	}
+
+}
+
+.main-nav {
+	border-top: 1px solid map-fetch($colors, brand-white);;				
+	clear: both;
+	height: 40px;
+	font-size: 15px;		
+
+	@include breakpoint(responsive) {
+		font-size: 14px;		
+	}
+
+	@include breakpoint(mobile) {
+		background-color: white;
+		height: 0;
+		left: 0;
+		overflow: hidden;
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		z-index: 3;
+		@include transition(0.4s height);
+
+		&.active {
+			height: 343px;
+		}
+	}
+
+	ul {	
+		list-style: none;
+		height: inherit;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	li {
+		display: inline-block;
+		line-height: 40px;
+		padding: 0 10px;
+		
+		@include breakpoint(desktop) {
+			@include transition(0.4s padding);
+		}
+
+		@include breakpoint(big-desktop) {
+			padding: 0 20px 0 10px;
+		}
+
+		@include breakpoint(mobile) {
+			background-color: map-fetch($colors, brand-white);
+			border-bottom: 1px solid #eee;
+			padding: 4px 0;
+			width: 100%;
+		}
+
+	}
+
+	a {
+		display: block;
+
+		&.active {
+			color: map-fetch($colors, brand-red);
+		}
+
+		&:hover { 
+			text-decoration: none;
+		}
+
+		@include breakpoint(mobile) {		
+			text-align: center;
+		}
+
+	}
+}

@@ -1,0 +1,60 @@
+.box {
+  background-color: #F7F7F7;
+  padding: 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+.box p {
+  margin: 0 0 10px;
+}
+@media (min-width: 240px) and (max-width: 599px) {
+  .box {
+    padding: 10px;
+  }
+}
+
+.map {
+  float: left;
+  margin: 10px 0;
+  height: 300px;
+  width: 40%;
+}
+@media (min-width: 240px) and (max-width: 599px) {
+  .map {
+    width: 100%;
+  }
+}
+.map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.address {
+  float: left;
+  margin-right: 2%;
+  width: 58%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+@media (min-width: 240px) and (max-width: 599px) {
+  .address {
+    width: 100%;
+  }
+}
+.address .adr {
+  clear: both;
+  font-style: normal;
+  margin: 0 0 10px;
+}
+.address strong {
+  display: block;
+  margin: 10px 0;
+}
+
+/*# sourceMappingURL=contact.css.map */

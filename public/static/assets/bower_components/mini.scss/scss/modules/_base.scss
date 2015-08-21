@@ -1,0 +1,21 @@
+// import all modules commons
+//
+// @import 'name';
+
+@import "header";
+@import "form";
+@import "buttons";
+@import "icons";
+@import "banner";
+@import "breadcrumb";
+@import "footer";
+@import "brands";
+@import "content-tab";
+@import "pagination";
+@import "txt-rich";
+@import "system-messages";
+@import "tables";
+
+// import the stylesheets to puglins and modifications to direco
+@import "select2";
+@import "flexslider";

@@ -1,0 +1,60 @@
+@import "../../bower_components/select2/select2";
+
+@include breakpoint(desktop) {
+
+	//
+	// styles own to Direco
+	//
+	.action-cart {
+
+		.select2-container {
+			top: -1px;
+			width: 100px;
+			@include box-sizing();
+		
+			.select2-choice {
+				height: 39px;
+			}
+
+		}
+
+	}
+
+	.select2-container {
+		width: 100%;
+
+		.select2-choice {
+			height: 40px;
+			@include border-rounded(2px);
+
+			& > .select2-chosen {
+				line-height: 40px;
+			}
+
+			.select2-arrow {
+				background: transparent;
+				border-color: transparent;
+				width: 25px;
+
+				b {
+
+					@include pixel-ratio(low) {
+						background: url('#{map-fetch($paths, icons)}') no-repeat -25px -75px;
+					}
+
+					@include pixel-ratio(retina-2k) {
+						background: url('#{map-fetch($paths, icons2x)}') no-repeat -25px -75px;							
+					}
+
+				}			
+			}
+
+		}
+		
+	}
+
+	.select2-results .select2-highlighted {
+	    background: map-fetch($colors, brand-gray);
+	}
+
+}

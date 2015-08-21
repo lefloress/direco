@@ -1,0 +1,55 @@
+// import all helpers
+//
+@import 'base';
+
+.box {
+	background-color: map-fetch($colors, brand-white);
+	padding: 20px;
+	@include box-sizing();
+
+	p {
+		margin: 0 0 10px;
+	}
+
+	@include breakpoint(mobile) {
+		padding: 10px;
+	}
+
+}
+
+.map {
+	float: left;
+	margin: 10px 0;
+	@include sizes(40%, 300px);
+
+	@include breakpoint(mobile) {
+		width: 100%;
+	}
+
+	iframe {
+		@include sizes(100%);
+	}
+}
+
+.address {
+	float: left;
+	margin-right: 2%;
+	width: 58%;
+	@include box-sizing();
+	
+	@include breakpoint(mobile) {
+		width: 100%;
+	}
+
+	.adr {
+		clear: both;
+		font-style: normal; 
+		margin: 0 0 10px;
+	}
+
+	strong {
+		display: block;
+		margin: 10px 0;
+	}
+
+}

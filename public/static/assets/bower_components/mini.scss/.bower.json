@@ -1,0 +1,33 @@
+{
+  "name": "mini.scss",
+  "authors": [
+    "Manuel Gonzalez <hola@manuelitox.com>"
+  ],
+  "description": "Mini Framework SCSS",
+  "main": "main.css",
+  "keywords": [
+    "Framework",
+    "CSS",
+    "SCSS",
+    "SASS"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/manuelitox/mini.scss",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "48832bc52d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "48832bc52d3006a686ba9b80d6c929dec7345092"
+  },
+  "_source": "git://github.com/manuelitox/mini.scss.git",
+  "_target": "*",
+  "_originalSource": "mini.scss",
+  "_direct": true
+}

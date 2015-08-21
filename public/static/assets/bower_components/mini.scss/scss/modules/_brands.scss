@@ -1,0 +1,50 @@
+.brands {
+	text-align: center;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		display: inline-block;
+
+		@include breakpoint(desktop) {
+			margin: 20px;
+		}
+		
+		@include breakpoint(responsive) {
+			display: block;
+			float: left;			
+		}
+
+		@include breakpoint(tablet) {
+			width: 33.33%;
+		}
+
+		@include breakpoint(mobile) {
+			width: 50%;
+		}
+
+		a {
+			display: block;
+		}
+
+	}
+
+	img {
+		height: 100px;
+
+		@include breakpoint(big-desktop) {
+			height: 150px;
+			width: 150px;
+		}
+
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+}

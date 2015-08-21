@@ -1,0 +1,24 @@
+{
+  "name": "mini.scss",
+  "version": "0.4.0",
+  "authors": [
+    "Manuel Gonzalez <hola@manuelitox.com>"
+  ],
+  "description": "Mini Framework SCSS",
+  "main": "main.css",
+  "keywords": [
+    "Framework",
+    "CSS",
+    "SCSS",
+    "SASS"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/manuelitox/mini.scss",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

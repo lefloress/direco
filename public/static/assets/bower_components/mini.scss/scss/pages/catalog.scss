@@ -1,0 +1,186 @@
+// import all helpers
+//
+@import 'base';
+
+.catalog {
+	padding: 20px 0 0;
+
+	article:first-of-type header {
+		@include border-rounded(2px 2px 0 0);
+	}
+
+	article.active {
+
+		button {
+			color: map-fetch($colors, brand-red);
+		}
+
+		.icon-more {
+			background-position: 0 -150px;
+		}
+
+	}
+
+	header {
+		background-color: white;
+		border: 1px solid map-fetch($colors, gray);
+		clear: both;
+		position: relative;
+		z-index: 2;
+	}
+
+	button {
+		color: map-fetch($colors, text);
+		display: block;
+		font-family: map-fetch($fonts, body), map-fetch($fonts, body-default);			
+		font-size: 16px;
+		font-weight: 400;		
+		text-align: left;
+		padding: 10px 30px 10px 10px;
+		position: relative;
+		width: 100%;
+
+		&:hover {
+			color: map-fetch($colors, brand-red);
+		}
+
+
+		span {
+			position: absolute;
+			right: 10px;
+		}
+
+	}
+
+	h4 {		
+		background-color: map-fetch($colors, brand-white);		
+		font-family: map-fetch($fonts, body), map-fetch($fonts, body-default);			
+		font-size: 15px;
+		font-weight: 400;
+		margin-bottom: 0;
+		padding: 10px;
+	}
+
+	h3, 
+	h4 {
+		margin: 0;
+	}
+
+	.tags {
+		visibility: hidden;
+		overflow: hidden;
+		top: -20px;
+		position: relative;
+		z-index: 1;
+		@include transition(0.2s);
+
+		> * {
+			display: none;
+		}
+
+	}
+
+	.active .tags {
+		visibility: visible;
+		top: 0;
+		@include transition(0.2s);
+
+		> * {
+			display: block;
+		}
+
+	}
+
+	ul {
+		border: 1px solid map-fetch($colors, gray);
+		list-style: none;
+		margin: 0;
+		padding: 10px;
+		text-align: center;
+		@include box-sizing();
+
+		li {
+			background-color: map-fetch($colors, brand-blue);
+			border: 1px solid transparent;
+			margin: 10px 10px 5px;
+			@include border-rounded(2px);
+			@include transition(0.4s);
+
+			&:hover {
+				background-color: map-fetch($colors, gray);
+			}
+
+			@include breakpoint(desktop) {
+				display: inline-block;
+			}
+
+			@include breakpoint(tablet) {
+				display: inline-block;
+			}
+
+			@include breakpoint(responsive) {
+				font-size: 14px;
+			}
+
+			@include breakpoint(mobile) {
+				display: block;
+			}
+
+		}
+
+		a {
+			color: white;
+			display: block;
+			padding: 4px 10px;
+
+			&:hover {
+				text-decoration: none;	
+				color: map-fetch($colors, text);			
+			}
+
+		}
+
+	}
+
+	.catalog-brands {
+		overflow: hidden;
+
+		a {
+			padding: 0;
+		}
+
+		li {
+			background-color: transparent;
+			display: block;
+			float: left;
+			margin: 0;
+			padding: 10px 10px 5px;
+			@include box-sizing();
+
+			&:hover {
+				background-color: transparent;
+				border-color: map-fetch($colors, gray);
+				@include transition(0.4s);
+			}
+
+			@include breakpoint(desktop) {
+				width: 25%;
+			}
+
+			@include breakpoint(tablet) {
+				width: 33.33%;
+			}
+
+			@include breakpoint(mobile) {
+				width: 50%;
+			}
+
+		}
+
+		figure {
+			margin: 0;
+		}
+
+	}
+
+}

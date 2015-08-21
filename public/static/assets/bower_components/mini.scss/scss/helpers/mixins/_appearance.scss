@@ -1,0 +1,8 @@
+// Appearance
+// @param $value (normal | icon | window | button | menu | field | none);
+// 
+// @include appearance(none);
+// 
+@mixin appearance($value) {
+	@include prefixer(appearance, $value, webkit moz);
+}

@@ -1,0 +1,78 @@
+.system-messages {
+	padding-right: 40px;
+	position: absolute; 
+	width: 100%;
+	top: 121px;
+	visibility: visible;
+	z-index: 2;
+	@include box-sizing();
+	@include transition(0.4s);
+
+	&.closed {
+		top: 100px;
+		z-index: 0;
+		visibility: hidden;
+
+		@include breakpoint(mobile) {
+			top: 40px;
+		}
+	}
+
+	@include breakpoint(desktop) {
+		text-align: center;
+	}
+
+	@include breakpoint(tablet) {
+		text-align: center;
+	}
+
+	@include breakpoint(mobile) {
+		top: 60px;
+	}		
+
+	&.success .msg-close {
+		background-color: darken(map-fetch($colors, green), 16%);
+	}
+
+	&.error .msg-close {
+		background-color: darken(map-fetch($colors, brand-red), 16%);
+	}
+
+	.msg-close {
+		cursor: pointer;
+		top: 0;
+		right: 0;
+		text-align: center;
+		padding: 0;
+		position: absolute;
+		z-index: 1;
+		@include sizes(40px, 100%);
+	}
+
+	.msg {
+		@extend %system-messages;
+		margin: 0;
+		position: relative;
+		z-index: 1;
+
+		a {
+			color: white;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+
+		}
+
+	}
+
+	&.success > .msg {
+		background-color: map-fetch($colors, green);
+	}
+
+	&.error .msg {
+		background-color: map-fetch($colors, brand-red);
+	}
+
+}

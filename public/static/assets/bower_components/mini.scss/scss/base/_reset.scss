@@ -1,0 +1,122 @@
+body {
+	color: map-fetch($colors, text);
+	font-family: map-fetch($fonts, body), map-fetch($fonts, body-default);	
+	font-size: 16px;
+	line-height: 24px;	
+	margin: 0;
+	padding: 0;
+
+	@include breakpoint(mobile) {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+h1, h2, h3 {
+	font-weight: 700;
+}
+
+h1 {
+	color: map-fetch($colors, text);
+	margin: 0;
+}
+
+h2 {
+	color: map-fetch($colors, text);
+	font-size: 22px;
+	line-height: 30px;
+	margin: 0 0 20px;
+
+	@include breakpoint(mobile) {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+}
+
+h3 {
+	color: map-fetch($colors, brand-red);
+	font-size: 18px;
+	line-height: 28px;
+	margin: 0 0 20px;
+
+	@include breakpoint(mobile) {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+}
+
+h4 {
+	color: map-fetch($colors, text);
+	font-size: 12px;
+	line-height: 12px;
+	margin: 0 0 10px;
+}
+
+p {
+	margin: 0 0 20px;
+
+	&.pre {
+		font-weight: 700;
+	}
+}
+
+a {
+	color: map-fetch($colors, text);
+	text-decoration: none;
+	
+	&:hover {
+		color: map-fetch($colors, brand-red);
+		text-decoration: underline;
+	}
+}
+
+button, a {
+
+	&:focus {
+		outline: none;
+	}
+	
+}
+
+button {
+	background: transparent;
+	border: 0;
+	color: map-fetch($colors, text);
+	cursor: pointer;
+
+	&:hover {
+		color: map-fetch($colors, brand-red);
+	}
+
+	@include breakpoint(desktop) {
+		font-size: 16px;
+	}
+
+	@include breakpoint(responsive) {
+		font-size: 14px;
+	}
+
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+figure {
+	margin: 0 0 20px 0;
+	padding: 0;
+	text-align: center;
+
+	figcaption {
+		display: block;
+		text-align: center;
+		font-size: 14px;
+	}
+}
+
+hr {
+	border: 1px solid map-fetch($colors, gray);
+}

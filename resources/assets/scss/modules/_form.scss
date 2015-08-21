@@ -1,0 +1,377 @@
+.form {
+
+	fieldset {
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	legend {
+		border-bottom: 1px solid map-fetch($colors, gray);
+		color: map-fetch($colors, brand-blue);
+		font-weight: 700;
+		display: block;
+		padding: 10px 0;
+		margin: 10px 0;
+		width: 100%;
+	}
+
+	@include breakpoint(desktop) {
+
+		.group-fields {
+
+			.field {
+				clear: none;
+				float: left;
+				width: 48%;
+
+				&:first-of-type {
+					margin-right: 2%;
+				}
+
+				&:last-of-type {
+					margin-left: 2%;
+				}			
+
+			}
+
+		}
+
+	}
+
+	@include breakpoint(tablet) {
+
+		.group-fields {
+
+			.field {
+				clear: none;
+				float: left;
+				width: 48%;
+
+				&:first-of-type {
+					margin-right: 2%;
+				}
+
+				&:last-of-type {
+					margin-left: 2%;
+				}			
+
+			}
+
+		}
+
+	}
+
+	.field,
+	.field-submit {
+		clear: both;
+		@include box-sizing();
+	}
+
+	.field {
+		padding: 10px 0;		
+	}
+
+	.field-submit {
+		padding: 20px 0 10px;
+	}
+
+	.field-required {
+
+		label:after {
+			color: map-fetch($colors, brand-red);
+			content: '*';
+			font-size: 14px;
+			line-height: 18px;
+			margin-left: 4px;
+			position: relative;
+		}
+
+	}
+
+	.field-error {
+		
+		.message-error {
+			@extend %system-messages;
+			background-color: map-fetch($colors, brand-red);
+			margin: 10px 0 0;
+			@include border-rounded(2px);
+		}
+
+		input,
+		select,
+		textarea {
+			border-color: map-fetch($colors, brand-red);
+		}
+
+	}	
+
+	.field-search {
+		position: relative;
+
+		input {
+			padding-left: 5px;
+			padding-right: 50px;
+			position: relative;
+			z-index: 1;
+			width: 100%;
+			@include appearance(none);
+		}
+
+		button {
+			border-left: 1px solid map-fetch($colors, gray);
+			height: 40px;
+			position: absolute;
+			margin: 0;
+			right: 0;
+			top: 0;
+			z-index: 1;
+		}
+
+		.icon-search {
+			top: 2px;
+		}
+		
+		input:focus ~ ol {
+			visibility: visible;
+			top: 39px;
+			@include transition(0.4s);
+		}
+
+		ol {
+			visibility: hidden;
+			top: 0px;
+			z-index: 0;
+		}
+
+	}
+
+	.field-half,
+	.field-half ~ * {
+
+		@include breakpoint(desktop) {
+			width: 48%
+		}
+
+		@include breakpoint(tablet) {
+			width: 48%
+		}
+
+		@include breakpoint(mobile) {
+			width: 100%
+		}
+	}
+
+	.field-ci {
+		position: relative;
+
+		select,
+		.select2-container {
+			left: 0;
+			position: absolute;
+			width: 56px;
+		}
+
+		input[type="text"] {
+			padding-left: 66px;
+
+			@include breakpoint(desktop) {
+				height: 42px;				
+			}
+		}
+	}	
+
+	label {
+		display: block;
+		margin: 0 0 5px 0;
+	}
+
+	input,
+	select {
+		background-color: white;
+		border: 1px solid darken(map-fetch($colors, gray), 8%);
+		height: 40px;
+		line-height: 18px;
+		padding: 0 10px;
+		width: 100%;
+		@include box-sizing();
+		@include border-rounded(2px);
+		@include placeholder(lighten(map-fetch($colors, text), 20%));
+
+		@include breakpoint(desktop) {
+			font-size: 16px;
+		}
+
+		@include breakpoint(tablet) {
+			font-size: 16px;
+		}
+
+		@include breakpoint(mobile) {
+			font-size: 14px;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+	}
+
+	textarea {
+		background-color: white;
+		border: 1px solid darken(map-fetch($colors, gray), 8%);
+		min-height: 200px;
+		padding: 10px;		
+		width: 100%;
+		@include box-sizing();
+		@include border-rounded(2px);
+		@include placeholder(lighten(map-fetch($colors, text), 20%));
+
+		@include breakpoint(desktop) {
+			font-size: 16px;
+		}
+
+		@include breakpoint(tablet) {
+			font-size: 16px;
+		}
+
+		@include breakpoint(mobile) {
+			font-size: 14px;
+		}
+
+		&:focus {
+			outline: none;
+		}		
+
+	}
+
+	@include breakpoint(responsive) {
+	
+		input[type=search],
+		select {
+			@include appearance(none);
+
+		}		
+
+		select {
+			background-position: right -76px;
+			background-repeat: no-repeat;
+			content: '';
+			position: relative;
+
+			@include pixel-ratio(low) {
+				background-image: url('#{map-fetch($paths, icons)}');
+			}
+
+			@include pixel-ratio(retina-2k) {
+				background-image: url('#{map-fetch($paths, icons2x)}');
+				background-size: 50px;
+			}
+
+			@-moz-document url-prefix() {
+			    background-image: none;
+			}				
+
+		}
+	
+	}
+
+	p {
+		font-size: 14px;
+		margin-top: 20px;		
+	}
+
+}
+
+.form-login {
+	background-color: map-fetch($colors, brand-white);
+	height: 0;
+	overflow: hidden;	
+	padding: 0 10px;
+	position: absolute;
+	text-align: left;
+	top: 100%;
+	z-index: 3;
+	@include transition(0.4s height);
+	@include box-sizing();
+
+	@include breakpoint(desktop) {
+		margin-top: 10px;
+		right: 10px;
+		width: 320px;
+	}
+
+	@include breakpoint(tablet) {
+		margin-top: 10px;
+		right: 10px;
+		width: 320px;
+	}
+
+	@include breakpoint(big-desktop) {
+		width: 380px;
+	}
+
+	@include breakpoint(mobile) {
+		border-bottom: 1px solid map-fetch($colors, gray);
+		left: 0;
+		width: 100%;
+	}
+
+	&.active {
+		height: 250px;
+
+		@include breakpoint(desktop) {
+			border: 1px solid map-fetch($colors, gray);
+		}
+
+	}
+
+	fieldset {
+		padding: 10px;
+	}
+
+	input,
+	select {
+		width: 100%;
+	}
+
+	button {
+		margin: 0;
+		width: 100%;
+	}
+
+	p {
+		text-align: center;
+	}
+
+}
+
+.form-filter {
+
+	.field {
+		position: relative;
+	}
+
+	input[type="search"] {
+		padding-right: 44px;
+		position: relative;
+		z-index: 1;
+		@include appearance(none);
+	}
+
+	.icon-search {
+		background-position: 0 -51px;
+		position: absolute;
+		top: 18px;
+		right: 10px;
+		z-index: 1;
+	}
+
+	p {
+		background-color: map-fetch($colors, gray);
+		bottom: 1px;
+		margin-top: 0;
+		padding: 8px;
+		position: relative;
+	}
+
+}

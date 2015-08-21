@@ -1,0 +1,89 @@
+// import all helpers
+//
+@import 'base';
+
+.product {
+
+}
+
+.detail-product {
+	
+	p {
+		margin-bottom: 0;
+	}
+
+	.price {
+		color: map-fetch($colors, brand-red);
+		margin: 30px 0 10px;
+		display: block;
+
+		@include breakpoint(desktop) {
+			font-size: 28px;
+		}
+
+		@include breakpoint(tablet) {
+			font-size: 24px
+		}
+
+		@include breakpoint(mobile) {
+			font-size: 20px;
+		}
+
+	}
+
+}
+
+.actions-product {
+	margin-top: 30px;
+
+	.form {
+
+		select {
+			width: 100px;
+
+			@include breakpoint(mobile) {
+				width: 80px;
+			}
+
+		}
+
+	}
+
+	.btn {
+		margin-left: 10px;
+	}
+
+	.icon-cart {
+		margin-right: 4px;
+		top: 6px;
+	}
+
+}
+
+.compatible-product {
+
+	.col12 > h3 {
+		margin-bottom: 20px;
+	}
+
+	article {
+		border-bottom: 1px solid map-fetch($colors, gray);
+		clear: both;
+		margin: 10px 0;
+		overflow: hidden;
+		width: 100%;
+
+		h3 {
+			margin-bottom: 0;
+			color: map-fetch($colors, text);
+		}
+
+		figure {
+			float: left;
+			margin-bottom: 0;
+			margin-right: 20px;
+		}
+
+	}
+
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="application-name" content="direco.com.ve">
+	<meta name="author" content="Dessigual">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">	
+	<meta name="robots" content="all">
+	<meta name="description" content="Description Direco">
+	<meta name="keywords" content="content keywords"> 
+	
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="assets/favicons/favicon-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="assets/favicons/favicon-160x160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="assets/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="assets/favicons/favicon-32x32.png" sizes="32x32">
+	<meta name="msapplication-TileColor" content="#b91d47">
+	<meta name="msapplication-TileImage" content="assets/favicons/mstile-144x144.png">
+	
+	<title>Inicio | Direco</title>  	
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/bower_components/mini.scss/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/bower_components/mini.scss/css/home.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="col12">
+				<button class="open-nav">
+					<span class="navicon"></span>
+				</button>		
+				<h1 class="site-brand">	
+					<a href="/"></a>
+				</h1>
+				<div class="user-tab">
+					<!--
+					<button class="open-form">
+						<span class="copy-text">Entrar</span>
+						<span class="icon-user"></span>
+					</button>
+					<a href="registro.html" class="btn">Regístrate</a>
+					<form action="#" class="form form-login">
+						<fieldset>
+							<div class="field">
+								<input type="text" placeholder="Username">
+							</div>
+							<div class="field">
+								<input type="password" placeholder="Contraseña">
+							</div>
+							<div class="field-submit">
+								<button type="submit" class="btn">Iniciar Sesión</button>
+								<p><a href="recuperar-contrasena.html">Olvidé mi Contraseña</a></p>
+							</div>
+						</fieldset>
+					</form>
+					-->
+					<p class="username">
+						<a href="#editar-perfil">Username</a>
+						<a href="carrito.html"><span class="icon-cart"></span></a>
+						<a href="#logout"><span class="icon-logout"></span></a>
+					</p>
+				</div>					
+			</div>
+		</div>	
+		<nav class="main-nav">
+			<ul>
+				<li><a href="index.html" class="active">Inicio</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li><a href="noticias.html">Noticias</a></li>
+				<li><a href="servicios.html">Servicios</a></li>
+				<li><a href="#">Información</a></li>
+				<li><a href="catalogo.html">Catálogo</a></li>
+				<li><a href="contacto.html">Contáctanos</a></li>
+			</ul>
+		</nav>	
+	</header>
+	<div class="system-messages success">
+		<p class="msg">El producto ha sido agregado satisfactoriamente a su carrito de <a href="">compra</a>.</p>
+		<button class="msg-close"><span class="icon-close"></span></button>
+	</div>
+	<section class="home-banner">
+		<div class="container row">
+			<div class="col12">
+				<h2>Somos más que una solucion <br>Para tu vehículo</h2>
+			</div>	
+			<form action="" class="form form-search">
+				<fieldset>
+					<div class="field-search">
+						<input type="search" placeholder="Busca tu repuesto">
+						<button type="submit"><span class="icon-search"></span></button>
+						<ol>
+							<li>Utilice pocas palabras. (Ej. Faro corola)</li>
+							<li>Números de parte sin guiones ni espacios.</li>
+						</ol>
+					</div>
+				</fieldset>
+			</form>
+			<button class="btn-transparent open-advanced-search">Seleccione Marca</button>
+			<form action="" class="form form-advanced-search">
+				<fieldset>
+					<div class="field">
+						<select name="brand" id="brand" class="select2">
+							<option>Selecciona Marca</option>
+							<option value="1">Toyota</option>
+							<option value="1">Mercedes</option>
+							<option value="1">BMW</option>
+							<option value="1">Fiat</option>
+							<option value="1">Ford</option>
+							<option value="1">Chevrolet</option>
+							<option value="1">Seat</option>
+						</select>
+					</div>
+					<div class="field">
+						<select name="model" id="model" class="select2">
+							<option>Selecciona Modelo</option>
+							<option value="1">Autana</option>
+							<option value="1">Fiesta</option>
+							<option value="1">Corsa</option>
+							<option value="1">Clio</option>
+							<option value="1">Starlet</option>
+							<option value="1">Corvette</option>
+							<option value="1">Optra</option>
+						</select>
+					</div>
+					<div class="field">
+						<select name="motor" id="motor" class="select2">
+							<option>Selecciona Motor</option>
+							<option value="1">1.3</option>
+							<option value="1">1.4</option>
+							<option value="1">1.5</option>
+							<option value="1">1.6</option>
+							<option value="1">1.8</option>
+						</select>							
+					</div>
+				</fieldset>
+			</form>	
+		</div>
+	</section>
+	<section class="brands">
+		<div class="container row">
+			<ul>
+				<li>
+					<a href="#marca/nombre">
+						<img src="assets/images/brands/chevrolet.png" alt="chevrolet" width="100">
+					</a>					
+				</li>
+				<li>
+					<a href="#marca/nombre">
+						<img src="assets/images/brands/jeep.png" alt="jeep" width="100">
+					</a>					
+				</li>
+				<li>
+					<a href="#marca/nombre">
+						<img src="assets/images/brands/ford.png" alt="ford" width="100">
+					</a>						
+				</li>
+				<li>
+					<a href="#marca/nombre">
+						<img src="assets/images/brands/chevrolet.png" alt="chevrolet" width="100">
+					</a>
+				</li>
+				<li>
+					<a href="#marca/nombre">
+						<img src="assets/images/brands/jeep.png" alt="jeep" width="100">
+					</a>
+				</li>
+				<li>
+					<a href="#marca/nombre">
+						<img src="assets/images/brands/ford.png" alt="ford" width="100">
+					</a>					
+				</li>
+			</ul>	
+			<div class="col12">
+				<p class="txt-center"><a href="marcas.html" class="btn">Ver todas nuestras Marcas</a></p>					
+			</div>			
+		</div>
+	</section>
+	<section class="home-news wrap-cnt invert-colors">
+		<div class="container row">
+				<div class="col12">
+					<header>
+						<h3>Noticias Destacadas</h3>
+					</header>
+				</div>
+				<div class="col6">
+					<article class="cnt-tab">
+						<figure><img src="assets/images/noticia-prueba/rectangle.jpg" width="100"></figure>
+						<h3><a href="#">¿Que significa ACTECO?</a></h3>
+						<p>La Empresa China Chery's Technology Corporation en Cooperacion con la Austriaca...</p>	
+					</article>					
+				</div>
+				<div class="col6">
+					<article class="cnt-tab">
+						<figure><img src="assets/images/noticia-prueba/rectangle.jpg" width="100"></figure>
+						<h3><a href="#">¿Que significa ACTECO?</a></h3>
+						<p>La Empresa China Chery's Technology Corporation en Cooperacion con la Austriaca...</p>	
+					</article>					
+				</div>
+				<div class="col12">
+					<footer>
+						<a href="noticias.html" class="btn">Ver todas las Noticias</a>						
+					</footer>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="promotions wrap-cnt">
+		<div class="container row">
+			<div class="col12">
+				<header>
+					<h3>Promociones</h3>
+				</header>
+			</div>
+			<div class="col6">
+				<article class="cnt-tab">
+					<figure><img src="assets/images/noticia-prueba/rectangle.jpg" width="100"></figure>
+					<h3><a href="#">Bloque de Motor, Sellos de Motor</a></h3>
+					<p>Motor: V6 M.4000 12 VALV SOCH 4 CADENAS 01-05</p>						
+				</article>
+			</div>
+			<div class="col6">
+				<article class="cnt-tab">
+					<figure><img src="assets/images/noticia-prueba/rectangle.jpg" width="100"></figure>
+					<h3><a href="#">Bloque de Motor, Sellos de Motor</a></h3>
+					<p>Motor: V6 M.4000 12 VALV SOCH 4 CADENAS 01-05</p>						
+				</article>
+			</div>
+			<div class="col6">
+				<article class="cnt-tab">
+					<figure><img src="assets/images/noticia-prueba/rectangle.jpg" width="100"></figure>
+					<h3><a href="#">Bloque de Motor, Sellos de Motor</a></h3>
+					<p>Motor: V6 M.4000 12 VALV SOCH 4 CADENAS 01-05</p>						
+				</article>
+			</div>
+			<div class="col6">	
+				<article class="cnt-tab">
+					<figure><img src="assets/images/noticia-prueba/rectangle.jpg" width="100"></figure>
+					<h3><a href="#">Bloque de Motor, Sellos de Motor</a></h3>
+					<p>Motor: V6 M.4000 12 VALV SOCH 4 CADENAS 01-05</p>						
+				</article>
+			</div>
+			<div class="col12">
+				<footer>
+					<a href="#" class="btn">Ver todas nuestras Promociones</a>
+				</footer>						
+			</div>
+		</div>		
+	</section>	
+	<section class="recommended-products wrap-cnt invert-colors">
+		<div class="container row">
+			<div class="col12">
+				<header>
+					<h3>Productos Recomendados</h3>
+				</header>
+			</div>
+			<div class="col6">
+				<article class="cnt-tab">
+					<figure><img src="assets/images/noticia-prueba/rectangle.jpg" width="100"></figure>
+					<h3><a href="#">Bloque de Motor, Sellos de Motor</a></h3>
+					<p>Motor: V6 M.4000 12 VALV SOCH 4 CADENAS 01-05</p>						
+				</article>				
+			</div>	
+			<div class="col6">
+				<article class="cnt-tab">
+					<figure><img src="assets/images/noticia-prueba/rectangle.jpg" width="100"></figure>
+					<h3><a href="#">Bloque de Motor, Sellos de Motor</a></h3>
+					<p>Motor: V6 M.4000 12 VALV SOCH 4 CADENAS 01-05</p>						
+				</article>				
+			</div>	
+			<div class="col6">
+				<article class="cnt-tab">
+					<figure><img src="assets/images/noticia-prueba/rectangle.jpg" width="100"></figure>
+					<h3><a href="#">Bloque de Motor, Sellos de Motor</a></h3>
+					<p>Motor: V6 M.4000 12 VALV SOCH 4 CADENAS 01-05</p>						
+				</article>				
+			</div>	
+			<div class="col6">
+				<article class="cnt-tab">
+					<figure><img src="assets/images/noticia-prueba/rectangle.jpg" width="100"></figure>
+					<h3><a href="#">Bloque de Motor, Sellos de Motor</a></h3>
+					<p>Motor: V6 M.4000 12 VALV SOCH 4 CADENAS 01-05</p>						
+				</article>				
+			</div>	
+			<div class="col12">			
+				<footer>
+					<a href="#" class="btn">Ver todos los Promociones</a>
+				</footer>
+			</div>
+		</div>
+	</section>
+	<footer class="footer row-top">
+		<div class="foot-contacts">		
+			<a href="#contact" class="link-contact">No lo encuentras? solicítalo aquí</a>
+			<a href="tel:15551234567" class="link-tel">
+				<span class="icon-tel"></span>(0241) 8534334
+			</a>
+			<a href="mailto:info@direco.com.ve?subject=Mail desde nuestro sitio web" class="link-email">
+				<span class="icon-mail"></span>
+				info@direco.com.ve
+			</a>
+		</div>	
+		<div class="foot-end">
+			<div class="container row">
+				<div class="col5 full">
+					<div class="guarantee">
+						<figure><img src="assets/images/sticker.png" alt="100% garantizados" width="100"></figure>
+						<h4>Productos 100% garantizados</h4>
+						<p>Distribuimos repuestos automotrices de la mejor calidad y 100% nuevos para vehículos europeos, americanos y asiáticos.</p>						
+					</div>
+				</div>
+				<div class="col7 full">
+					<ul>
+						<li><a href="servicios.html">Servicios</a></li>
+						<li><a href="#Informacion">Información</a></li>
+						<li><a href="#Catalogo">Catálogo</a></li>
+						<li><a href="#Promociones">Promociones</a></li>
+						<li><a href="#contacto">Ventas al mayor</a></li>
+					</ul>
+					<div class="copyright">
+						<p>Direco, C.A. RIF: J-07536530-5 © 2014.</p>
+						<p>Derechos reservados. Desarrollado por <a href="http://www.dessigual.com" target="_blank">Dessigual.</a></p>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="assets/bower_components/select2/select2.min.js"></script>
+	<script src="assets/bower_components/select2/select2_locale_es.js"></script>
+	<script src="assets/js/scripts.min.js"></script>
+</body>
+</html>

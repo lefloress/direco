@@ -1,0 +1,21 @@
+// Icons
+// Basic styles for icons
+//
+
+// @extend %icons;
+//
+%icon {
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: relative;
+	@include sizes(25px);
+
+	@include pixel-ratio(low) {
+		background-image: url('#{map-fetch($paths, icons)}');
+	}
+
+	@include pixel-ratio(retina-2k) {
+		background-image: url('#{map-fetch($paths, icons2x)}');
+		background-size: 50px;
+	}
+} 

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="application-name" content="direco.com.ve">
+	<meta name="author" content="Dessigual">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">	
+	<meta name="robots" content="all">
+	<meta name="description" content="Description Direco">
+	<meta name="keywords" content="content keywords">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="assets/favicons/favicon-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="assets/favicons/favicon-160x160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="assets/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="assets/favicons/favicon-32x32.png" sizes="32x32">
+	<meta name="msapplication-TileColor" content="#b91d47">
+	<meta name="msapplication-TileImage" content="assets/favicons/mstile-144x144.png">	 
+	
+	<title>Catálogo por Marca | Direco</title>  	
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/bower_components/mini.scss/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/bower_components/mini.scss/css/contact.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="col12">
+				<button class="open-nav">
+					<span class="navicon"></span>
+				</button>		
+				<h1 class="site-brand">	
+					<a href="/">
+					</a>
+				</h1>
+				<div class="user-tab">
+					<button class="open-form">
+						<span class="copy-text">Entrar</span>
+						<span class="icon-user"></span>
+					</button>
+					<a href="registro.html" class="btn">Regístrate</a>
+					<form action="#" class="form form-login">
+						<fieldset>
+							<div class="field">
+								<input type="text" placeholder="Username">
+							</div>
+							<div class="field">
+								<input type="password" placeholder="Contraseña">
+							</div>
+							<div class="field-submit">
+								<button type="submit" class="btn">Iniciar Sesión</button>
+								<p><a href="recuperar-contrasena.html">Olvidé mi Contraseña</a></p>
+							</div>
+						</fieldset>
+					</form>
+					<!--
+					<p class="username">
+						<a href="#editar-perfil">Username</a>
+						<a href="#carrito"><span class="icon-cart"></span></a>
+						<a href="#logout"><span class="icon-logout"></span></a>
+					</p>
+					-->
+				</div>					
+			</div>
+		</div>		
+		<nav class="main-nav">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li><a href="noticias.html">Noticias</a></li>
+				<li><a href="servicios.html">Servicios</a></li>
+				<li><a href="#">Información</a></li>
+				<li><a href="catalogo.html">Catálogo</a></li>
+				<li><a href="contacto.html" class="active">Contáctanos</a></li>
+			</ul>
+		</nav>		
+	</header>
+	<section class="banner">
+		<div class="container">
+			<div class="col12">
+				<h2>Contáctanos</h2>
+			</div>
+		</div>
+	</section>
+
+	<section class="get-in-touch">
+		<div class="container row-top">
+			<div class="col6">
+				<h3>Escríbenos</h3>
+				<form action="#" class="form form-contact" validate>
+					<fieldset>
+						<div class="field field-required field-error">
+							<label for="name">Nombre</label>
+							<input type="text" name="name" id="name" placeholder="Nombre completo">
+							<p class="message-error">Nombre es requerido</p>
+						</div>
+						<div class="field field-required">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" placeholder="Corre electrónico">
+						</div>
+						<div class="field field-required">
+							<label for="tel">Teléfono</label>
+							<input type="tel" name="tel" id="tel" placeholder="código de área + número">
+						</div>				
+						<div class="field field-required">
+							<label for="company">Empresa</label>
+							<input type="text" name="company" id="company">
+						</div>				
+						<div class="field field-required">
+							<label for="message">Mensaje</label>
+							<textarea name="message" id="message" placeholder="Escribe tú mensaje"></textarea>
+						</div>										
+						<div class="field-submit">
+							<button type="submit" class="btn">Enviar</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<div class="col6">
+				<figure><img src="assets/images/attention-customer.jpg" alt="Atención al Cliente" width="220"></figure>
+				<div class="box">
+					<p class="pre">Puede hacer sus pedidos directamente por teléfono de Lunes a Viernes de 8:00 am a 1:00 pm y de 2:00 pm a 5:00 pm, Sábados y Domingos libres, notificar su pago por esta misma vía.</p>
+					<p>¿Como visualizo los precios de venta?</p>
+					<p>¿Tiene alguna pregunta o duda antes de hacer su pedido?</p>
+					<p>¿Le gustaría saber cuándo le será entregado su pedido? (Consulte nuestra sección Formas de Pago y envío)</p>
+					<p>¿Qué repuesto es compatible con mi vehículo?</p>
+					<p>¿Tiene sugerencias sobre nuestra Web que quiera transmitirnos?</p>
+					<p>¡Su opinión nos interesa!</p>
+				</div>
+			</div>
+		</div>
+		<div class="container row-top">
+			<div class="col12">
+				<h3>Nos encontramos</h3>	
+				<div class="address box" itemscope itemtype="http://schema.org/Organization">
+					<address class="adr" itemprop="address">Av. Escalona entre Michelena y Rangel, local 91-8, Sector La Candelaria, al lado de la E/S. Escalona. Valencia, Edo. Carabobo</address>
+					<p itemprop="telephone">
+						<strong>Teléfonos Locales:</strong>
+						(0241) 
+						<a href="tel:02418534334">853.43.34</a> / 
+						<a href="tel:02418534909">853.49.09</a> /
+						<a href="tel:02418358455">835.84.55</a> /
+						<a href="tel:02418978525">897.85.25</a> /
+					 	<a href="tel:02418532582">853.25.82</a> /
+					 	<a href="tel:02418313489">831.34.89</a> /
+					 	<a href="tel:02418357307">835.73.07</a>
+						<strong>Teléfonos Celulares:</strong>
+						<a href="tel:04144122382">(0414) 412.23.82</a> /
+						<a href="tel:04124412554">(0412) 4412554</a> /
+						<a href="tel:04163307273">(0416) 3307273</a> 
+					</p>
+					<p itemprop="email"><strong>Email: </strong><a href="mailto:info@direco.com.ve?subject=Mail desde nuestro sitio web">info@direco.com.ve</a></p>
+				</div>					
+				<div class="map">
+					<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps/ms?ie=UTF8&amp;hl=es&amp;msa=0&amp;msid=209629707264846033874.000491f368fc77c3feff6&amp;source=embed&amp;t=m&amp;ll=10.173392,-68.009958&amp;spn=0.00697,0.009645&amp;iwloc=000491f36c985cabf0bf5&amp;output=embed"></iframe>				
+				</div>		
+			</div>			
+		</div>
+	</section>
+
+	<footer class="footer row-top">
+		<div class="foot-contacts">		
+			<a href="#contact" class="link-contact">No lo encuentras? solicítalo aquí</a>
+			<a href="tel:15551234567" class="link-tel">
+				<span class="icon-tel"></span>(0241) 8534334
+			</a>
+			<a href="mailto:info@direco.com.ve?subject=Mail desde nuestro sitio web" class="link-email">
+				<span class="icon-mail"></span>
+				info@direco.com.ve
+			</a>
+		</div>	
+		<div class="foot-end">
+			<div class="container row">
+				<div class="col5 full">
+					<div class="guarantee">
+						<figure><img src="assets/images/sticker.png" alt="100% garantizados" width="100"></figure>
+						<h4>Productos 100% garantizados</h4>
+						<p>Distribuimos repuestos automotrices de la mejor calidad y 100% nuevos para vehículos europeos, americanos y asiáticos.</p>						
+					</div>
+				</div>
+				<div class="col7 full">
+					<ul>
+						<li><a href="servicios.html">Servicios</a></li>
+						<li><a href="#Informacion">Información</a></li>
+						<li><a href="#Catalogo">Catálogo</a></li>
+						<li><a href="#Promociones">Promociones</a></li>
+						<li><a href="#contacto">Ventas al mayor</a></li>
+					</ul>
+					<div class="copyright">
+						<p>Direco, C.A. RIF: J-07536530-5 © 2014.</p>
+						<p>Derechos reservados. Desarrollado por <a href="http://www.dessigual.com" target="_blank">Dessigual.</a></p>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="assets/js/scripts.min.js"></script>
+</body>
+</html>

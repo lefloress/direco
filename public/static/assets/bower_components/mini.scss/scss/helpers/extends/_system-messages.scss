@@ -1,0 +1,11 @@
+// System messages
+// Basic styles for messages
+//
+
+// @extend %system-messages;
+//
+%system-messages {
+	color: white;
+	padding: 8px 10px;
+	@include box-sizing();
+}
